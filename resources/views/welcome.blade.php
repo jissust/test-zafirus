@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>
+            Pan American Grain
+        </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -56,13 +58,21 @@
                 color: #000;
                 opacity: 1;
             }
-            #nuestros-productos hr{
+            #nuestros-productos hr,
+            nav hr{
                 color: #fee600;
             }
+            nav label{
+                color: #00164d;
+            }
         </style>
-
+        <!-- 
+            #00164d azul
+            #fee600 amarillo
+        -->
     </head>
     <body>
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -82,11 +92,12 @@
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Productos
                         </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <ul class="dropdown-menu dropdown-menu text-end px-2" aria-labelledby="navbarDropdownMenuLink">
                             <li>
-                                <label for="">
+                                <label class="pe-2">
                                     Consumo humano
                                 </label>
+                                <hr>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">
@@ -119,9 +130,10 @@
                                 </a>
                             </li>
                             <li>
-                                <label for="">
+                                <label class="pe-2">
                                     Productos Agrícolas
                                 </label>
+                                <hr>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#">
@@ -138,7 +150,7 @@
                                     Otros productos
                                 </a>
                             </li>
-                      </ul>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#" tabindex="-1" aria-disabled="true">
@@ -169,7 +181,7 @@
             </div>
         </div>
     </nav>
-    
+        
     <section id="slide">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -209,7 +221,6 @@
             </button>
         </div>
     </section>
-
     <section id="nuestros-productos" class="position-relative" style="overflow: hidden;">
         <div class="container">
             <div class="row">
@@ -311,7 +322,6 @@
             </div>
         </div>  
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://use.fontawesome.com/700f23d8f8.js"></script>
