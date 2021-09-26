@@ -65,6 +65,61 @@
             nav label{
                 color: #00164d;
             }
+            .nuestros-productos__img_container{
+                position: relative;
+            }
+            .nuestros-productos__img_description_container_dark{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #000;
+                color: #fff;
+                visibility: hidden;
+                opacity: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: opacity .2s, visibility .2s;                
+            }
+            .nuestros-productos__img_container:hover .nuestros-productos__img_description_container_dark{
+                visibility: visible;
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            .nuestros-productos__img_description_container {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                color: #fff;
+                visibility: hidden;
+                opacity: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: opacity .2s, visibility .2s;
+            }
+
+            .nuestros-productos__img_container:hover .nuestros-productos__img_description_container {
+                visibility: visible;
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            .nuestros-productos__img_description {
+                transition: .2s;
+                transform: translateY(1em);
+                font-size: 25px;
+                font-weight: bolder;
+            }
+
+            .nuestros-productos__img_container:hover .nuestros-productos__img_description {
+                transform: translateY(0);
+                cursor: pointer;
+            }
         </style>
         <!-- 
             #00164d azul
@@ -76,7 +131,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="img/public/logo.png" class="">
+                <img src="img/public/logo.png" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -236,10 +291,31 @@
                     </p>
                     <div class="row pb-5">
                         <div class="col-sm-6 pb-3">
-                            <img src="img/presentation/300x200.png" class="img-fluid" alt="" />
+                            <div class="nuestros-productos__img_container">
+                                <img src="img/presentation/300x200.png" class="img-fluid" alt="" />
+                                <div class="nuestros-productos__img_description_container_dark">
+
+                                </div>
+                                <div class="nuestros-productos__img_description_container">
+                                    <p class="nuestros-productos__img_description">
+                                        Consumo Humano
+                                    </p>
+                                    
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm-6 pb-3">
-                            <img src="img/presentation/300x200.png" class="img-fluid" alt="" />
+                            <div class="nuestros-productos__img_container">
+                                <img src="img/presentation/300x200.png" class="img-fluid" alt="" />
+                                <div class="nuestros-productos__img_description_container_dark">
+
+                                </div>
+                                <div class="nuestros-productos__img_description_container">
+                                    <p class="nuestros-productos__img_description">
+                                        Consumo Humano
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -302,7 +378,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 offset-sm-3 py-5 text-center">
-                    <img src="img/public/logo.png" alt="" class="pb-3" />
+                    <img src="img/public/logo.png" alt="" class="pb-3 img-fluid""" />
                     <div class="pb-5">
                         Una de las empresas agroindustriales más grandes del Caribe
                     </div>
