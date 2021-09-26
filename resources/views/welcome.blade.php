@@ -16,7 +16,7 @@
 
         <style>
             body {
-                font-family: 'Nunito', sans-serif;
+                font-family: Arial;
                 color: #fff;
             }
             .text-justify{
@@ -118,6 +118,30 @@
 
             .nuestros-productos__img_container:hover .nuestros-productos__img_description {
                 transform: translateY(0);
+                cursor: pointer;
+            }
+            .nuestros-productos__img_container img {
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;                
+                box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+            }
+            .btn-blue{
+                background-color: #00164d;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+            .btn-blue:hover{
+                color: #00164d;
+                background-color: #fff;
+                border: 1px solid #00164d;    
+            }
+            footer a{
+                color: #fff;
+            }
+            footer a:hover{
                 cursor: pointer;
             }
         </style>
@@ -246,22 +270,37 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/slide/1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-flex h-100 align-items-center justify-content-center">
-                        <h1 class="">First slide label</h1>
+                    <img src="img/slide/1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex flex-md-column h-100 align-items-center justify-content-center">
+                        <h1 class="">
+                            Producto uno
+                        </h1>
+                        <a href="#" class="btn btn-blue">
+                            Ver productos
+                        </a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/slide/2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-flex h-100 align-items-center justify-content-center">
-                        <h1>Second slide label</h1>
+                    <img src="img/slide/2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex flex-md-column h-100 align-items-center justify-content-center">
+                        <h1>
+                            Producto dos
+                        </h1>
+                        <a href="#" class="btn btn-blue">
+                            Ver productos
+                        </a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/slide/3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-flex h-100 align-items-center justify-content-center">
+                    <img src="img/slide/3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-flex flex-md-column h-100 align-items-center justify-content-center">
                         <div>
-                            <h1>Third slide label</h1>
+                            <h1>
+                                Producto tres
+                            </h1>
+                            <a href="#" class="btn btn-blue">
+                                Ver productos
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -279,7 +318,7 @@
     <section id="nuestros-productos" class="position-relative" style="overflow: hidden;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 offset-sm-3 py-5">
+                <div class="col-sm-8 offset-sm-2 py-5">
                     <h1 class="text-center pb-3">
                         <label for="">
                             Nuestros Productos
@@ -292,28 +331,29 @@
                     <div class="row pb-5">
                         <div class="col-sm-6 pb-3">
                             <div class="nuestros-productos__img_container">
-                                <img src="img/presentation/300x200.png" class="img-fluid" alt="" />
+                                <img src="img/nuestros-productos/1.jpg" class="img-fluid w-100" alt="" />
                                 <div class="nuestros-productos__img_description_container_dark">
 
                                 </div>
-                                <div class="nuestros-productos__img_description_container">
-                                    <p class="nuestros-productos__img_description">
+                                <div class="nuestros-productos__img_description_container d-flex flex-column">
+                                    <p class="nuestros-productos__img_description p-0 m-0">
                                         Consumo Humano
                                     </p>
-                                    
+                                    <div style="height: 2px; background: #fee600; width: 60%; padding: 0; margin: 0;"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 pb-3">
                             <div class="nuestros-productos__img_container">
-                                <img src="img/presentation/300x200.png" class="img-fluid" alt="" />
+                                <img src="img/nuestros-productos/1.jpg" class="img-fluid w-100" alt="" />
                                 <div class="nuestros-productos__img_description_container_dark">
 
                                 </div>
-                                <div class="nuestros-productos__img_description_container">
+                                <div class="nuestros-productos__img_description_container d-flex flex-column">
                                     <p class="nuestros-productos__img_description">
                                         Consumo Humano
                                     </p>
+                                    <div style="height: 2px; background: #fee600; width: 60%; padding: 0; margin: 0;"></div>
                                 </div>
                             </div>
                         </div>
@@ -334,14 +374,23 @@
                                 <hr>
                             </label>
                         </h1>
-                        <p>
-                            <i class="fa fa-map-marker" aria-hidden="true"></i> Amelia Industrial Park, 9 Calle Claudia, Guaynabo 00969
+                        <p class="d-flex">
+                            <i class="fa fa-map-marker" aria-hidden="true" style="color:#00164d; font-size: 25px;"></i> 
+                            <span class="ps-3">
+                                Amelia Industrial Park, 9 Calle Claudia, Guaynabo 00969
+                            </span>
                         </p>
                         <p>
-                            <i class="fa fa-at" aria-hidden="true"></i> info@panamericangrain.com
+                            <i class="fa fa-at" aria-hidden="true" style="color:#00164d; font-size: 25px;"></i> 
+                            <span class="ps-2">
+                                info@panamericangrain.com
+                            </span>
                         </p>
                         <p>
-                            <i class="fa fa-phone" aria-hidden="true"></i> 787-273-6100
+                            <i class="fa fa-phone" aria-hidden="true" style="color:#00164d; font-size: 25px;"></i> 
+                            <span class="ps-2">
+                                787-273-6100
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -364,7 +413,7 @@
                                 <textarea class="form-control" name="" id="" style="resize: none" placeholder="Mensaje"></textarea>
                             </div>
                             <div class="d-grid gap-2 pb-2">
-                                <button class="btn btn-primary">
+                                <button class="btn btn-blue">
                                     Enviar
                                 </button>
                             </div>
@@ -383,15 +432,15 @@
                         Una de las empresas agroindustriales más grandes del Caribe
                     </div>
                     <div class="d-flex justify-content-center">
-                        <div class="px-3">
+                        <a href="" class="px-3">
                             <i class="fa fa-instagram" aria-hidden="true" style="font-size: 30px;"></i>
-                        </div>
-                        <div  class="px-3">
+                        </a>
+                        <a href="#" class="px-3">
                             <i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 30px;"></i>
-                        </div>
-                        <div  class="px-3">
+                        </a>
+                        <a class="px-3">
                             <i class="fa fa-facebook" aria-hidden="true" style="font-size: 30px;"></i>
-                        </div>
+                        </a>
                     </div>
 
                 </div>  
