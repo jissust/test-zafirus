@@ -13,142 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://use.fontawesome.com/700f23d8f8.css" media="all" rel="stylesheet">
         <!-- Styles -->
-
-        <style>
-            body {
-                font-family: Arial;
-                color: #fff;
-            }
-            .text-justify{
-                text-align: justify;
-            }
-            .carousel-indicators button {
-                width: 10px!important;
-                height: 10px!important;
-                border-radius: 50%;
-            }
-            #nuestros-productos{
-                overflow: hidden; 
-                background-image:url('img/nuestros-productos/fondo.png');  
-                background-position: center; 
-                background-repeat: no-repeat; 
-                background-size: cover;
-            }
-            #contacto{
-                overflow: hidden; 
-                background-image:url('img/contacto/fondo.png');  
-                background-position: center; 
-                background-repeat: no-repeat; 
-                background-size: cover;
-            }
-            footer{
-                overflow: hidden; 
-                background-image:url('img/footer/fondo.png');  
-                background-position: center; 
-                background-repeat: no-repeat; 
-                background-size: cover;
-            }
-            input{
-                font-family:Arial, FontAwesome
-            }
-            hr{
-                text-align: center;
-                margin: 0 5%;
-                height: 1px !important;
-                color: #000;
-                opacity: 1;
-            }
-            #nuestros-productos hr,
-            nav hr{
-                color: #fee600;
-            }
-            nav label{
-                color: #00164d;
-            }
-            .nuestros-productos__img_container{
-                position: relative;
-            }
-            .nuestros-productos__img_description_container_dark{
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background: #000;
-                color: #fff;
-                visibility: hidden;
-                opacity: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: opacity .2s, visibility .2s;                
-            }
-            .nuestros-productos__img_container:hover .nuestros-productos__img_description_container_dark{
-                visibility: visible;
-                opacity: 0.5;
-                cursor: pointer;
-            }
-            .nuestros-productos__img_description_container {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                color: #fff;
-                visibility: hidden;
-                opacity: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: opacity .2s, visibility .2s;
-            }
-
-            .nuestros-productos__img_container:hover .nuestros-productos__img_description_container {
-                visibility: visible;
-                opacity: 1;
-                cursor: pointer;
-            }
-
-            .nuestros-productos__img_description {
-                transition: .2s;
-                transform: translateY(1em);
-                font-size: 25px;
-                font-weight: bolder;
-            }
-
-            .nuestros-productos__img_container:hover .nuestros-productos__img_description {
-                transform: translateY(0);
-                cursor: pointer;
-            }
-            .nuestros-productos__img_container img {
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                border-radius: 5px;                
-                box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
-                -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
-            }
-            .btn-blue{
-                background-color: #00164d;
-                color: #fff;
-                border: 1px solid #fff;
-            }
-            .btn-blue:hover{
-                color: #00164d;
-                background-color: #fff;
-                border: 1px solid #00164d;    
-            }
-            footer a{
-                color: #fff;
-            }
-            footer a:hover{
-                cursor: pointer;
-            }
-        </style>
-        <!-- 
-            #00164d azul
-            #fee600 amarillo
-        -->
+        <link href="css/estilo.css" rel="stylesheet" >
     </head>
     <body>
 
@@ -315,7 +180,7 @@
             </button>
         </div>
     </section>
-    <section id="nuestros-productos" class="position-relative" style="overflow: hidden;">
+    <section id="nuestros-productos" class="position-relative overFlowHidden">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 offset-sm-2 py-5">
@@ -339,7 +204,7 @@
                                     <p class="nuestros-productos__img_description p-0 m-0">
                                         Consumo Humano
                                     </p>
-                                    <div style="height: 2px; background: #fee600; width: 60%; padding: 0; margin: 0;"></div>
+                                    <div class="line_yellow"></div>
                                 </div>
                             </div>
                         </div>
@@ -353,7 +218,7 @@
                                     <p class="nuestros-productos__img_description">
                                         Consumo Humano
                                     </p>
-                                    <div style="height: 2px; background: #fee600; width: 60%; padding: 0; margin: 0;"></div>
+                                    <div  class="line_yellow"></div>
                                 </div>
                             </div>
                         </div>
@@ -375,19 +240,19 @@
                             </label>
                         </h1>
                         <p class="d-flex">
-                            <i class="fa fa-map-marker" aria-hidden="true" style="color:#00164d; font-size: 25px;"></i> 
+                            <i class="fa fa-map-marker iconos_blue" aria-hidden="true"></i> 
                             <span class="ps-3">
                                 Amelia Industrial Park, 9 Calle Claudia, Guaynabo 00969
                             </span>
                         </p>
                         <p>
-                            <i class="fa fa-at" aria-hidden="true" style="color:#00164d; font-size: 25px;"></i> 
+                            <i class="fa fa-at iconos_blue" aria-hidden="true"></i> 
                             <span class="ps-2">
                                 info@panamericangrain.com
                             </span>
                         </p>
                         <p>
-                            <i class="fa fa-phone" aria-hidden="true" style="color:#00164d; font-size: 25px;"></i> 
+                            <i class="fa fa-phone iconos_blue" aria-hidden="true"></i> 
                             <span class="ps-2">
                                 787-273-6100
                             </span>
@@ -410,7 +275,7 @@
                                 <input type="text" name="email" class="form-control" placeholder="&#xf003; Email">
                             </div>
                             <div class="form-group pb-2">
-                                <textarea class="form-control" name="" id="" style="resize: none" placeholder="Mensaje"></textarea>
+                                <textarea class="form-control resizeNone" name="" placeholder="Mensaje"></textarea>
                             </div>
                             <div class="d-grid gap-2 pb-2">
                                 <button class="btn btn-blue">
@@ -433,13 +298,13 @@
                     </div>
                     <div class="d-flex justify-content-center">
                         <a href="" class="px-3">
-                            <i class="fa fa-instagram" aria-hidden="true" style="font-size: 30px;"></i>
+                            <i class="fa fa-instagram font30px" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="px-3">
-                            <i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 30px;"></i>
+                            <i class="fa fa-youtube-play font30px" aria-hidden="true"></i>
                         </a>
                         <a class="px-3">
-                            <i class="fa fa-facebook" aria-hidden="true" style="font-size: 30px;"></i>
+                            <i class="fa fa-facebook font30px" aria-hidden="true"></i>
                         </a>
                     </div>
 

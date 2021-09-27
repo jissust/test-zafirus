@@ -1,0 +1,145 @@
+body {
+    font-family: Arial;
+    color: #fff;
+}
+.text-justify{
+    text-align: justify;
+}
+.carousel-indicators button {
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+}
+#nuestros-productos{
+    overflow: hidden; 
+    background-image:url('/img/nuestros-productos/fondo.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+#contacto{
+    overflow: hidden; 
+    background-image:url('/img/contacto/fondo.png');  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+footer{
+    overflow: hidden; 
+    background-image:url('/img/footer/fondo.png');  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+input{
+    font-family:Arial, FontAwesome
+}
+hr{
+    text-align: center;
+    margin: 0 5%;
+    height: 1px !important;
+    color: #000;
+    opacity: 1;
+}
+#nuestros-productos hr,
+nav hr{
+    color: #fee600;
+}
+nav label{
+    color: #00164d;
+}
+.nuestros-productos__img_container{
+    position: relative;
+}
+.nuestros-productos__img_description_container_dark{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;                
+}
+.nuestros-productos__img_container:hover .nuestros-productos__img_description_container_dark{
+    visibility: visible;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.nuestros-productos__img_description_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;
+}
+
+.nuestros-productos__img_container:hover .nuestros-productos__img_description_container {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nuestros-productos__img_description {
+    transition: .2s;
+    transform: translateY(1em);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.nuestros-productos__img_container:hover .nuestros-productos__img_description {
+    transform: translateY(0);
+    cursor: pointer;
+}
+.nuestros-productos__img_container img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;                
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+.btn-blue{
+    background-color: #00164d;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn-blue:hover{
+    color: #00164d;
+    background-color: #fff;
+    border: 1px solid #00164d;    
+}
+footer a{
+    color: #fff;
+}
+footer a:hover{
+    cursor: pointer;
+}
+.line_yellow{
+    height: 2px; background: #fee600; width: 60%; padding: 0; margin: 0;
+}
+.iconos_blue{
+    color:#00164d !important; 
+    font-size: 25px !important;
+}
+.font30px{
+    font-size: 30px !important;
+}
+.resizeNone{
+    resize: none;
+}
+.overFlowHidden{
+    overflow: hidden !important;
+}
