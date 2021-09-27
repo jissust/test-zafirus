@@ -89,7 +89,7 @@
 
                                 </div>
                                 <div class="nuestros-productos__img_description_container d-flex flex-column">
-                                    <p class="nuestros-productos__img_description">
+                                    <p class="nuestros-productos__img_description p-0 m-0">
                                         Consumo Humano
                                     </p>
                                     <div  class="line_yellow"></div>
